@@ -3,19 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2AD5CA2112611A46B9ACF41 /* Pods_portfolioRosen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A35958C553011E52EDA029 /* Pods_portfolioRosen.framework */; };
 		CA128C8C241A8EDB007B3CBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA128C8B241A8EDB007B3CBC /* AppDelegate.swift */; };
 		CA128C8E241A8EDB007B3CBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA128C8D241A8EDB007B3CBC /* SceneDelegate.swift */; };
 		CA128C90241A8EDB007B3CBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA128C8F241A8EDB007B3CBC /* ViewController.swift */; };
 		CA128C93241A8EDB007B3CBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA128C91241A8EDB007B3CBC /* Main.storyboard */; };
 		CA128C95241A8EDC007B3CBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA128C94241A8EDC007B3CBC /* Assets.xcassets */; };
 		CA128C98241A8EDC007B3CBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA128C96241A8EDC007B3CBC /* LaunchScreen.storyboard */; };
+		CA128CA6241A92DA007B3CBC /* Pythagoras.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA128CA5241A92DA007B3CBC /* Pythagoras.storyboard */; };
+		CA128CA8241A9319007B3CBC /* Pythagoras.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA128CA7241A9319007B3CBC /* Pythagoras.swift */; };
+		CA19F409241BDD4700373207 /* stoich.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA19F408241BDD4700373207 /* stoich.storyboard */; };
+		CA19F40B241BDE9600373207 /* Stoich.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA19F40A241BDE9600373207 /* Stoich.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27A35958C553011E52EDA029 /* Pods_portfolioRosen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_portfolioRosen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C96611906B07CA82657DBB8 /* Pods-portfolioRosen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-portfolioRosen.debug.xcconfig"; path = "Target Support Files/Pods-portfolioRosen/Pods-portfolioRosen.debug.xcconfig"; sourceTree = "<group>"; };
+		C860BC2730A10C38F2CC6870 /* Pods-portfolioRosen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-portfolioRosen.release.xcconfig"; path = "Target Support Files/Pods-portfolioRosen/Pods-portfolioRosen.release.xcconfig"; sourceTree = "<group>"; };
 		CA128C88241A8EDB007B3CBC /* portfolioRosen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = portfolioRosen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA128C8B241A8EDB007B3CBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA128C8D241A8EDB007B3CBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,10 @@
 		CA128C94241A8EDC007B3CBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA128C97241A8EDC007B3CBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA128C99241A8EDC007B3CBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA128CA5241A92DA007B3CBC /* Pythagoras.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Pythagoras.storyboard; path = ../../../.Trash/Pythagoras.storyboard; sourceTree = "<group>"; };
+		CA128CA7241A9319007B3CBC /* Pythagoras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pythagoras.swift; sourceTree = "<group>"; };
+		CA19F408241BDD4700373207 /* stoich.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = stoich.storyboard; sourceTree = "<group>"; };
+		CA19F40A241BDE9600373207 /* Stoich.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stoich.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2AD5CA2112611A46B9ACF41 /* Pods_portfolioRosen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11B5D62093F95757E8410987 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27A35958C553011E52EDA029 /* Pods_portfolioRosen.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9034B18CC010F818C61A582D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C96611906B07CA82657DBB8 /* Pods-portfolioRosen.debug.xcconfig */,
+				C860BC2730A10C38F2CC6870 /* Pods-portfolioRosen.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CA128C7F241A8EDA007B3CBC = {
 			isa = PBXGroup;
 			children = (
 				CA128C8A241A8EDB007B3CBC /* portfolioRosen */,
 				CA128C89241A8EDB007B3CBC /* Products */,
+				9034B18CC010F818C61A582D /* Pods */,
+				11B5D62093F95757E8410987 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +92,10 @@
 				CA128C8D241A8EDB007B3CBC /* SceneDelegate.swift */,
 				CA128C8F241A8EDB007B3CBC /* ViewController.swift */,
 				CA128C91241A8EDB007B3CBC /* Main.storyboard */,
+				CA128CA5241A92DA007B3CBC /* Pythagoras.storyboard */,
+				CA19F408241BDD4700373207 /* stoich.storyboard */,
+				CA19F40A241BDE9600373207 /* Stoich.swift */,
+				CA128CA7241A9319007B3CBC /* Pythagoras.swift */,
 				CA128C94241A8EDC007B3CBC /* Assets.xcassets */,
 				CA128C96241A8EDC007B3CBC /* LaunchScreen.storyboard */,
 				CA128C99241A8EDC007B3CBC /* Info.plist */,
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA128C9C241A8EDC007B3CBC /* Build configuration list for PBXNativeTarget "portfolioRosen" */;
 			buildPhases = (
+				319B5F906E81F3EBFB120699 /* [CP] Check Pods Manifest.lock */,
 				CA128C84241A8EDB007B3CBC /* Sources */,
 				CA128C85241A8EDB007B3CBC /* Frameworks */,
 				CA128C86241A8EDB007B3CBC /* Resources */,
+				8A8E80BCA9F39553979E0937 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,18 +165,64 @@
 			files = (
 				CA128C98241A8EDC007B3CBC /* LaunchScreen.storyboard in Resources */,
 				CA128C95241A8EDC007B3CBC /* Assets.xcassets in Resources */,
+				CA128CA6241A92DA007B3CBC /* Pythagoras.storyboard in Resources */,
 				CA128C93241A8EDB007B3CBC /* Main.storyboard in Resources */,
+				CA19F409241BDD4700373207 /* stoich.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		319B5F906E81F3EBFB120699 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-portfolioRosen-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A8E80BCA9F39553979E0937 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-portfolioRosen/Pods-portfolioRosen-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-portfolioRosen/Pods-portfolioRosen-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-portfolioRosen/Pods-portfolioRosen-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CA128C84241A8EDB007B3CBC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA19F40B241BDE9600373207 /* Stoich.swift in Sources */,
 				CA128C90241A8EDB007B3CBC /* ViewController.swift in Sources */,
+				CA128CA8241A9319007B3CBC /* Pythagoras.swift in Sources */,
 				CA128C8C241A8EDB007B3CBC /* AppDelegate.swift in Sources */,
 				CA128C8E241A8EDB007B3CBC /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +366,7 @@
 		};
 		CA128C9D241A8EDC007B3CBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C96611906B07CA82657DBB8 /* Pods-portfolioRosen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +384,7 @@
 		};
 		CA128C9E241A8EDC007B3CBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C860BC2730A10C38F2CC6870 /* Pods-portfolioRosen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
