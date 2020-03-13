@@ -46,7 +46,7 @@ class Stoich: UIViewController {
             //tuple.1 refers to molar mass, so it must be multipled by the amount of atoms in a molecule for the molar mass of a molecule
             let moles = Float(weight!/(oxygenInfo.1 * atomAmount!))
             sampleWeight.text = String(moles)
-            
+             //for being the sure the button was pressed
             print ("Oxygen works")
         case gold:
             let atomAmount = Float(atomCount.text!)
@@ -55,7 +55,7 @@ class Stoich: UIViewController {
             let weight = Float(inputWeight.text!)
             let moles = Float(weight!/goldInfo.1)
             sampleWeight.text = String(moles)
-            
+            //for being the sure the button was pressed
             print ("Gold works")
         case silver:
             let atomAmount = Float(atomCount.text!)
@@ -66,7 +66,7 @@ class Stoich: UIViewController {
            let weight = Float(inputWeight.text!)
            let moles = Float(weight!/(silverInfo.atomicMass * atomAmount!))
            sampleWeight.text = String(moles)
-           
+            //for being the sure the button was pressed
            print ("Silver works")
         default:
             break
