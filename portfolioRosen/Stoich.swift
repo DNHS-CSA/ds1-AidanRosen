@@ -18,6 +18,8 @@ class Stoich: UIViewController {
     @IBOutlet weak var gold: UIButton!
     @IBOutlet weak var silver: UIButton!
     @IBOutlet weak var inputWeight: UITextField!
+    //below counts number of atoms formula
+    @IBOutlet weak var atomCount: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         atomicNumber.text = "0.0"
@@ -25,6 +27,7 @@ class Stoich: UIViewController {
         sampleWeight.text = "0.0"
         //the below sets to zero to avoid errors with undefined values
         inputWeight.text = "0.0"
+        atomCount.text = "1.0"
 
         // Do any additional setup after loading the view.
     }
@@ -36,15 +39,18 @@ class Stoich: UIViewController {
         switch sender {
         case oxygen:
             //I use tuples to refer to different elements and different data types
-            molarMass.text = String(oxygenInfo.1)
+            let atomAmount = Float(atomCount.text!)
+            molarMass.text = String(oxygenInfo.1 * atomAmount!)
             atomicNumber.text = String(oxygenInfo.0)
             let weight = Float(inputWeight.text!)
-            let moles = Float(weight!/oxygenInfo.1)
+            //tuple.1 refers to molar mass, so it must be multipled by the amount of atoms in a molecule for the molar mass of a molecule
+            let moles = Float(weight!/(oxygenInfo.1 * atomAmount!))
             sampleWeight.text = String(moles)
             
             print ("Oxygen works")
         case gold:
-            molarMass.text = String(goldInfo.1)
+            let atomAmount = Float(atomCount.text!)
+            molarMass.text = String(goldInfo.1 * atomAmount!)
             atomicNumber.text = String(goldInfo.0)
             let weight = Float(inputWeight.text!)
             let moles = Float(weight!/goldInfo.1)
@@ -52,11 +58,13 @@ class Stoich: UIViewController {
             
             print ("Gold works")
         case silver:
+            let atomAmount = Float(atomCount.text!)
             //here I use tuple referencing with names instead of numbers
-           molarMass.text = String(silverInfo.atomicMass)
+            //multiply atomic mass by atomAmount for molar mass of molecule
+           molarMass.text = String(silverInfo.atomicMass * atomAmount!)
            atomicNumber.text = String(silverInfo.atomicNumber)
            let weight = Float(inputWeight.text!)
-           let moles = Float(weight!/silverInfo.atomicMass)
+           let moles = Float(weight!/(silverInfo.atomicMass * atomAmount!))
            sampleWeight.text = String(moles)
            
            print ("Silver works")
